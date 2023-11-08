@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "poetry-web"
+version = "0.1.0"
+description = ""
+authors = ["Anna Essina <anna.essina@helsinki.fi>"]
+readme = "README.md"
+packages = [{include = "poetry_web"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.0"
+pytest = "^7.4.3"
+jsonpickle = "^3.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
