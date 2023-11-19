@@ -12,7 +12,7 @@ Login With Incorrect Password
     Output Should Contain   Invalid username or password
 
 Login With Nonexistent Username
-    Input Credentials   mooi    kalle4
+    Input Credentials   mooi    heei
     Output Should Contain    Invalid username or password
     
 *** Keywords ***
