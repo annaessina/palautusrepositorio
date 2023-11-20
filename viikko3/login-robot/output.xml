@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on linux)" generated="20231119 17:56:41.188" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on linux)" generated="20231120 11:13:43.389" rpa="false" schemaversion="4">
 <suite id="s1" name="Tests" source="/home/anessina/palautusrepositorio/viikko3/login-robot/src/tests">
 <suite id="s1-s1" name="Login" source="/home/anessina/palautusrepositorio/viikko3/login-robot/src/tests/login.robot">
 <test id="s1-s1-t1" name="Login With Correct Credentials" line="6">
@@ -7,128 +7,228 @@
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20231119 17:56:41.204" endtime="20231119 17:56:41.204"/>
+<status status="PASS" starttime="20231120 11:13:43.405" endtime="20231120 11:13:43.406"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20231119 17:56:41.204" endtime="20231119 17:56:41.204"/>
+<status status="PASS" starttime="20231120 11:13:43.406" endtime="20231120 11:13:43.406"/>
 </kw>
-<status status="PASS" starttime="20231119 17:56:41.204" endtime="20231119 17:56:41.204"/>
+<status status="PASS" starttime="20231120 11:13:43.406" endtime="20231120 11:13:43.406"/>
 </kw>
-<status status="PASS" starttime="20231119 17:56:41.204" endtime="20231119 17:56:41.204"/>
+<status status="PASS" starttime="20231120 11:13:43.405" endtime="20231120 11:13:43.406"/>
 </kw>
 <kw name="Input Credentials" library="resource">
 <arg>kalle</arg>
 <arg>kalle123</arg>
 <kw name="Input" library="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" starttime="20231119 17:56:41.205" endtime="20231119 17:56:41.205"/>
+<status status="PASS" starttime="20231120 11:13:43.406" endtime="20231120 11:13:43.406"/>
 </kw>
 <kw name="Input" library="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" starttime="20231119 17:56:41.205" endtime="20231119 17:56:41.205"/>
+<status status="PASS" starttime="20231120 11:13:43.406" endtime="20231120 11:13:43.406"/>
 </kw>
 <kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20231119 17:56:41.205" endtime="20231119 17:56:41.205"/>
+<status status="PASS" starttime="20231120 11:13:43.407" endtime="20231120 11:13:43.407"/>
 </kw>
-<status status="PASS" starttime="20231119 17:56:41.205" endtime="20231119 17:56:41.205"/>
+<status status="PASS" starttime="20231120 11:13:43.406" endtime="20231120 11:13:43.407"/>
 </kw>
 <kw name="Output Should Contain" library="AppLibrary">
 <arg>Logged in</arg>
-<status status="PASS" starttime="20231119 17:56:41.205" endtime="20231119 17:56:41.205"/>
+<status status="PASS" starttime="20231120 11:13:43.407" endtime="20231120 11:13:43.407"/>
 </kw>
-<status status="PASS" starttime="20231119 17:56:41.203" endtime="20231119 17:56:41.205"/>
+<status status="PASS" starttime="20231120 11:13:43.405" endtime="20231120 11:13:43.407"/>
 </test>
 <test id="s1-s1-t2" name="Login With Incorrect Password" line="10">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20231119 17:56:41.206" endtime="20231119 17:56:41.206"/>
+<status status="PASS" starttime="20231120 11:13:43.407" endtime="20231120 11:13:43.407"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20231119 17:56:41.206" endtime="20231119 17:56:41.206"/>
+<status status="PASS" starttime="20231120 11:13:43.407" endtime="20231120 11:13:43.408"/>
 </kw>
-<status status="PASS" starttime="20231119 17:56:41.206" endtime="20231119 17:56:41.206"/>
+<status status="PASS" starttime="20231120 11:13:43.407" endtime="20231120 11:13:43.408"/>
 </kw>
-<status status="PASS" starttime="20231119 17:56:41.206" endtime="20231119 17:56:41.206"/>
+<status status="PASS" starttime="20231120 11:13:43.407" endtime="20231120 11:13:43.408"/>
 </kw>
 <kw name="Input Credentials" library="resource">
 <arg>kalle</arg>
 <arg>kalle4</arg>
 <kw name="Input" library="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" starttime="20231119 17:56:41.206" endtime="20231119 17:56:41.206"/>
+<status status="PASS" starttime="20231120 11:13:43.408" endtime="20231120 11:13:43.408"/>
 </kw>
 <kw name="Input" library="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" starttime="20231119 17:56:41.207" endtime="20231119 17:56:41.207"/>
+<status status="PASS" starttime="20231120 11:13:43.408" endtime="20231120 11:13:43.408"/>
 </kw>
 <kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20231119 17:56:41.207" endtime="20231119 17:56:41.207"/>
+<status status="PASS" starttime="20231120 11:13:43.408" endtime="20231120 11:13:43.408"/>
 </kw>
-<status status="PASS" starttime="20231119 17:56:41.206" endtime="20231119 17:56:41.207"/>
+<status status="PASS" starttime="20231120 11:13:43.408" endtime="20231120 11:13:43.408"/>
 </kw>
 <kw name="Output Should Contain" library="AppLibrary">
 <arg>Invalid username or password</arg>
-<status status="PASS" starttime="20231119 17:56:41.207" endtime="20231119 17:56:41.207"/>
+<status status="PASS" starttime="20231120 11:13:43.408" endtime="20231120 11:13:43.408"/>
 </kw>
-<status status="PASS" starttime="20231119 17:56:41.206" endtime="20231119 17:56:41.207"/>
+<status status="PASS" starttime="20231120 11:13:43.407" endtime="20231120 11:13:43.408"/>
 </test>
 <test id="s1-s1-t3" name="Login With Nonexistent Username" line="14">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20231119 17:56:41.207" endtime="20231119 17:56:41.207"/>
+<status status="PASS" starttime="20231120 11:13:43.409" endtime="20231120 11:13:43.409"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20231119 17:56:41.208" endtime="20231119 17:56:41.208"/>
+<status status="PASS" starttime="20231120 11:13:43.409" endtime="20231120 11:13:43.409"/>
 </kw>
-<status status="PASS" starttime="20231119 17:56:41.207" endtime="20231119 17:56:41.208"/>
+<status status="PASS" starttime="20231120 11:13:43.409" endtime="20231120 11:13:43.409"/>
 </kw>
-<status status="PASS" starttime="20231119 17:56:41.207" endtime="20231119 17:56:41.208"/>
+<status status="PASS" starttime="20231120 11:13:43.409" endtime="20231120 11:13:43.409"/>
 </kw>
 <kw name="Input Credentials" library="resource">
 <arg>mooi</arg>
 <arg>heei</arg>
 <kw name="Input" library="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" starttime="20231119 17:56:41.208" endtime="20231119 17:56:41.208"/>
+<status status="PASS" starttime="20231120 11:13:43.409" endtime="20231120 11:13:43.409"/>
 </kw>
 <kw name="Input" library="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" starttime="20231119 17:56:41.208" endtime="20231119 17:56:41.208"/>
+<status status="PASS" starttime="20231120 11:13:43.409" endtime="20231120 11:13:43.409"/>
 </kw>
 <kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20231119 17:56:41.208" endtime="20231119 17:56:41.208"/>
+<status status="PASS" starttime="20231120 11:13:43.409" endtime="20231120 11:13:43.410"/>
 </kw>
-<status status="PASS" starttime="20231119 17:56:41.208" endtime="20231119 17:56:41.208"/>
+<status status="PASS" starttime="20231120 11:13:43.409" endtime="20231120 11:13:43.410"/>
 </kw>
 <kw name="Output Should Contain" library="AppLibrary">
 <arg>Invalid username or password</arg>
-<status status="PASS" starttime="20231119 17:56:41.208" endtime="20231119 17:56:41.208"/>
+<status status="PASS" starttime="20231120 11:13:43.410" endtime="20231120 11:13:43.410"/>
 </kw>
-<status status="PASS" starttime="20231119 17:56:41.207" endtime="20231119 17:56:41.208"/>
+<status status="PASS" starttime="20231120 11:13:43.408" endtime="20231120 11:13:43.410"/>
 </test>
-<status status="PASS" starttime="20231119 17:56:41.200" endtime="20231119 17:56:41.209"/>
+<status status="PASS" starttime="20231120 11:13:43.401" endtime="20231120 11:13:43.410"/>
 </suite>
-<status status="PASS" starttime="20231119 17:56:41.189" endtime="20231119 17:56:41.209"/>
+<suite id="s1-s2" name="Register" source="/home/anessina/palautusrepositorio/viikko3/login-robot/src/tests/register.robot">
+<test id="s1-s2-t1" name="Register With Valid Username And Password" line="7">
+<kw name="Create User And Input Register Command" type="SETUP">
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="PASS" starttime="20231120 11:13:43.412" endtime="20231120 11:13:43.412"/>
+</kw>
+<kw name="Input Register Command">
+<msg timestamp="20231120 11:13:43.413" level="FAIL">No keyword with name 'Input Register Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20231120 11:13:43.413" endtime="20231120 11:13:43.413"/>
+</kw>
+<status status="FAIL" starttime="20231120 11:13:43.412" endtime="20231120 11:13:43.413"/>
+</kw>
+<status status="FAIL" starttime="20231120 11:13:43.412" endtime="20231120 11:13:43.413">Setup failed:
+No keyword with name 'Input Register Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-s2-t2" name="Register With Already Taken Username And Valid Password" line="11">
+<kw name="Create User And Input Register Command" type="SETUP">
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="PASS" starttime="20231120 11:13:43.414" endtime="20231120 11:13:43.414"/>
+</kw>
+<kw name="Input Register Command">
+<msg timestamp="20231120 11:13:43.415" level="FAIL">No keyword with name 'Input Register Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20231120 11:13:43.415" endtime="20231120 11:13:43.415"/>
+</kw>
+<status status="FAIL" starttime="20231120 11:13:43.414" endtime="20231120 11:13:43.415"/>
+</kw>
+<status status="FAIL" starttime="20231120 11:13:43.413" endtime="20231120 11:13:43.415">Setup failed:
+No keyword with name 'Input Register Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-s2-t3" name="Register With Too Short Username And Valid Password" line="15">
+<kw name="Create User And Input Register Command" type="SETUP">
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="PASS" starttime="20231120 11:13:43.415" endtime="20231120 11:13:43.415"/>
+</kw>
+<kw name="Input Register Command">
+<msg timestamp="20231120 11:13:43.416" level="FAIL">No keyword with name 'Input Register Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20231120 11:13:43.416" endtime="20231120 11:13:43.416"/>
+</kw>
+<status status="FAIL" starttime="20231120 11:13:43.415" endtime="20231120 11:13:43.416"/>
+</kw>
+<status status="FAIL" starttime="20231120 11:13:43.415" endtime="20231120 11:13:43.417">Setup failed:
+No keyword with name 'Input Register Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-s2-t4" name="Register With Enough Long But Invalid Username And Valid Password" line="19">
+<kw name="Create User And Input Register Command" type="SETUP">
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="PASS" starttime="20231120 11:13:43.417" endtime="20231120 11:13:43.417"/>
+</kw>
+<kw name="Input Register Command">
+<msg timestamp="20231120 11:13:43.418" level="FAIL">No keyword with name 'Input Register Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20231120 11:13:43.418" endtime="20231120 11:13:43.418"/>
+</kw>
+<status status="FAIL" starttime="20231120 11:13:43.417" endtime="20231120 11:13:43.418"/>
+</kw>
+<status status="FAIL" starttime="20231120 11:13:43.417" endtime="20231120 11:13:43.418">Setup failed:
+No keyword with name 'Input Register Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-s2-t5" name="Register With Valid Username And Too Short Password" line="23">
+<kw name="Create User And Input Register Command" type="SETUP">
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="PASS" starttime="20231120 11:13:43.419" endtime="20231120 11:13:43.419"/>
+</kw>
+<kw name="Input Register Command">
+<msg timestamp="20231120 11:13:43.420" level="FAIL">No keyword with name 'Input Register Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20231120 11:13:43.420" endtime="20231120 11:13:43.420"/>
+</kw>
+<status status="FAIL" starttime="20231120 11:13:43.418" endtime="20231120 11:13:43.420"/>
+</kw>
+<status status="FAIL" starttime="20231120 11:13:43.418" endtime="20231120 11:13:43.420">Setup failed:
+No keyword with name 'Input Register Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-s2-t6" name="Register With Valid Username And Long Enough Password Containing Only Letters" line="28">
+<kw name="Create User And Input Register Command" type="SETUP">
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="PASS" starttime="20231120 11:13:43.420" endtime="20231120 11:13:43.420"/>
+</kw>
+<kw name="Input Register Command">
+<msg timestamp="20231120 11:13:43.421" level="FAIL">No keyword with name 'Input Register Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20231120 11:13:43.421" endtime="20231120 11:13:43.421"/>
+</kw>
+<status status="FAIL" starttime="20231120 11:13:43.420" endtime="20231120 11:13:43.421"/>
+</kw>
+<status status="FAIL" starttime="20231120 11:13:43.420" endtime="20231120 11:13:43.422">Setup failed:
+No keyword with name 'Input Register Command' found. Did you try using keyword 'AppLibrary.Input' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<status status="FAIL" starttime="20231120 11:13:43.410" endtime="20231120 11:13:43.422"/>
+</suite>
+<status status="FAIL" starttime="20231120 11:13:43.390" endtime="20231120 11:13:43.422"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="6" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="3" fail="6" skip="0" id="s1" name="Tests">Tests</stat>
 <stat pass="3" fail="0" skip="0" id="s1-s1" name="Login">Tests.Login</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s2" name="Register">Tests.Register</stat>
 </suite>
 </statistics>
 <errors>
