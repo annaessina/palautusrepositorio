@@ -32,11 +32,11 @@ Go To Login Page
 Go To Main Page
     Go To  ${HOME URL}
 
-Go To Register Page
-    Go To  ${REGISTER URL}
-
 Welcome Page Should Be Open
     Title Should Be  Welcome to Ohtu Application!
 
 Register Page Should Be Open
     Title Should Be  Register
+
+Go To Register Page
+    Go To  ${REGISTER URL}

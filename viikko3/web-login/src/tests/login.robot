@@ -19,9 +19,9 @@ Login With Incorrect Password
 
 Login With Nonexistent Username
     Set Username  maria
-    Set Password  kalle111
+    Set Password  kalle456
     Submit Credentials
-    Login Should Fail With Message  Username does not exist
+    Login Should Fail With Message  Invalid username
 
 *** Keywords ***
 Login Should Succeed
