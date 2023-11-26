@@ -1,3 +1,0 @@
-mmmm
-oo
-ii
