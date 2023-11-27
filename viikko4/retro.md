@@ -1,1 +1,5 @@
-Retrospektiivit ovat arvokas työkalu tiimien kehittämisessä, ja niiden avulla voidaan tarkastella menneitä työskentelytapoja ja löytää keinoja parantaa tiimin tehokkuutta
+Retrospektiivit ovat arvokas tapa tiimityön kehittämisessä, sillä niiden avulla voidaan tarkastella menneitä työskentelytapoja ja parantaa tiimin tehokkuutta.
+
+Start, Stop, Continue, More of, Less of Wheel tekniikassa käydään tiimissä jokainen kohta läpi yhdessä, esimerkiksi piirretään jokin havainnollistava kuva. Start-osassa mietitään mitä uusia käytäntöjä tai toimintatapoja voitaisiin ottaa käyttöön. Stop-osiossa tarkastellaan kohtia, jotka eivät ole toimineet tai ovat olleet haitallisia tiimin työskentelylle ja jotka lopetetaan. Continue-osiossa mietitään, mitkä tavat ovat toimineet ja olisivat käytössä jatkossakin. More of-osiossa tutkitaan, mitä asioita tiimin tulisi tehdä enemmän ja Less of Wheel-osiossa mietitään mitä asioita tulisi tehdä vähemmän, jotta tiimin toiminta olisi mahdollisimman tehokasta ja mukavaa.
+
+Glad, Sad, Mad tekniikassa tiimiläiset kirjoittavat ylös omia havaintoja jokaiseen kohtaan tiimin työskentelystä sprintin aikana ja vuorotellen kertovat niistä muille. Eli positiivisia, negatiivisia ja ärsytystä tuovia havaintoja. Tämän jälkeen käydään yhdessä kyseiset havainnot läpi ja äänestetään tärkeimmät, jotka huomioidaan tarkemmin.
