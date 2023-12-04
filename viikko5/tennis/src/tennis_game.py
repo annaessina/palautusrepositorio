@@ -1,4 +1,3 @@
-
 class TennisGame:
     def __init__(self, player1_name, player2_name):
         self.player1 = player1_name
