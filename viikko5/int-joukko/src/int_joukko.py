@@ -3,27 +3,22 @@ OLETUSKASVATUS = 5
 
 
 class IntJoukko:
-    # tämä metodi on ainoa tapa luoda listoja
-    def _luo_lista(self, koko):
-        return [0] * koko
-    
     def __init__(self, kapasiteetti=None, kasvatuskoko=None):
-        if kapasiteetti is None:
+        if not isinstance(kapasiteetti, int) or kapasiteetti < 0:
+            raise Exception("Väärä kapasiteetti")
+        elif kapasiteetti == None:
             self.kapasiteetti = KAPASITEETTI
-        elif not isinstance(kapasiteetti, int) or kapasiteetti < 0:
-            raise Exception("Väärä kapasiteetti")  # heitin vaan jotain :D
         else:
             self.kapasiteetti = kapasiteetti
 
-        if kasvatuskoko is None:
+        if not isinstance(kasvatuskoko, int) or kasvatuskoko < 0:
+            raise Exception("kapasiteetti2")
+        elif kasvatuskoko == None:
             self.kasvatuskoko = OLETUSKASVATUS
-        elif not isinstance(kapasiteetti, int) or kapasiteetti < 0:
-            raise Exception("kapasiteetti2")  # heitin vaan jotain :D
         else:
             self.kasvatuskoko = kasvatuskoko
 
-        self.ljono = self._luo_lista(self.kapasiteetti)
-
+        self.ljono = [0] * self.kapasiteetti
         self.alkioiden_lkm = 0
 
     def kuuluu(self, n):
@@ -39,25 +34,22 @@ class IntJoukko:
             return False
 
     def lisaa(self, n):
-        ei_ole = 0
-
         if self.alkioiden_lkm == 0:
             self.ljono[0] = n
-            self.alkioiden_lkm = self.alkioiden_lkm + 1
+            self.alkioiden_lkm += 1
             return True
         else:
             pass
 
         if not self.kuuluu(n):
             self.ljono[self.alkioiden_lkm] = n
-            self.alkioiden_lkm = self.alkioiden_lkm + 1
+            self.alkioiden_lkm += 1
 
-            # ei mahdu enempää, luodaan uusi säilytyspaikka luvuille
             if self.alkioiden_lkm % len(self.ljono) == 0:
                 taulukko_old = self.ljono
-                self.kopioi_lista(self.ljono, taulukko_old)
-                self.ljono = self._luo_lista(self.alkioiden_lkm + self.kasvatuskoko)
-                self.kopioi_lista(taulukko_old, self.ljono)
+                self.kopioi_taulukko(self.ljono, taulukko_old)
+                self.ljono = [0] * (self.alkioiden_lkm + self.kasvatuskoko)
+                self.kopioi_taulukko(taulukko_old, self.ljono)
 
             return True
 
@@ -84,7 +76,7 @@ class IntJoukko:
 
         return False
 
-    def kopioi_lista(self, a, b):
+    def kopioi_taulukko(self, a, b):
         for i in range(0, len(a)):
             b[i] = a[i]
 
@@ -92,7 +84,7 @@ class IntJoukko:
         return self.alkioiden_lkm
 
     def to_int_list(self):
-        taulu = self._luo_lista(self.alkioiden_lkm)
+        taulu = [0] * self.alkioiden_lkm
 
         for i in range(0, len(taulu)):
             taulu[i] = self.ljono[i]
@@ -146,10 +138,6 @@ class IntJoukko:
         elif self.alkioiden_lkm == 1:
             return "{" + str(self.ljono[0]) + "}"
         else:
-            tuotos = "{"
             for i in range(0, self.alkioiden_lkm - 1):
-                tuotos = tuotos + str(self.ljono[i])
-                tuotos = tuotos + ", "
-            tuotos = tuotos + str(self.ljono[self.alkioiden_lkm - 1])
-            tuotos = tuotos + "}"
+                tuotos = f"{str(self.ljono[i])}, {str(self.ljono[self.alkioiden_lkm])}"
             return tuotos
