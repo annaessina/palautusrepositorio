@@ -1,6 +1,5 @@
 from player_reader import PlayerReader
 
-
 def sort_by_points(player):
     return player.points
 
@@ -35,7 +34,7 @@ class Statistics:
 
     def matches(self, matcher):
         matching_players = filter(
-            lambda player: matcher.test(player),
+            lambda player: matcher.matches(player),
             self._players
         )
 
